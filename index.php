@@ -89,7 +89,16 @@ include('header.php')
        <?php include('curosel.php') ?>
    </div>
 
-    <!--         curosel                            -->
+    <!--        circuit                       -->
+    <?php
+include('circuit.php')
+?>
+    <!--        circuit                       -->
+
+
+
+
+
     <style type="text/css">
       .list-unstyled li{
         font-size: 17px;
