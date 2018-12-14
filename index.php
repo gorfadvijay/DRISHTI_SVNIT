@@ -79,11 +79,15 @@ include('header.php')
     </script>
     <!--intro section end-->
 
-
+<div class="bg" style="width: 1800px; height: 250px;">
+  <?php include('bb8.php') ?>
+</div>
 
     <!--         curosel                            -->
     
-     <?php include('curosel.php') ?>
+   <div class="bg">
+       <?php include('curosel.php') ?>
+   </div>
 
     <!--         curosel                            -->
     <style type="text/css">
