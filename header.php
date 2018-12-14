@@ -49,6 +49,11 @@
   
  
 </section>
+<style type="text/css">
+  #navbar ul li a {
+    font-size: 16px;
+  }
+</style>
 
 
 

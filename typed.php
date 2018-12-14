@@ -44,7 +44,7 @@
     <script type="text/javascript">
     	$(function(){
 	$(".typed").typed({
-		 strings: ["hello friends", "welcome to drishti", "where 'we' comes before 'me' ",],
+		 strings: ["hello friends", "welcome to drishti", "where 'we' comes before 'me' ","where we strive to work with excellence and motivation",],
 		// Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
 		stringsElement: null,
 		// typing speed

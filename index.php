@@ -85,6 +85,11 @@ include('header.php')
      <?php include('curosel.php') ?>
 
     <!--         curosel                            -->
+    <style type="text/css">
+      .list-unstyled li{
+        font-size: 17px;
+      }
+    </style>
     <!--end features section-->
     <section class="showcase-section">
         <div class="space-90"></div>
@@ -94,7 +99,7 @@ include('header.php')
                 <div class="row vertical-align-child">
                     <div class="col-md-5 margin-b-30">
                         <h3>Technovation</h3>
-                        <p>
+                        <p style="font-size: 17px;">
                             Drishti has been the driving force in igniting the young minds of SVNIT in taking up various technical projects. It boasts of providing a platform to the students where they can collaborate, carry out technical projects and can see their most creative and innovative ideas, and thus their dreams materialize. 
                         </p>
                     </div>
