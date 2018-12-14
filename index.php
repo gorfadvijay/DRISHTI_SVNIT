@@ -33,6 +33,7 @@ include('header.php')
                             <h1><span class="typed"></span></h1>  
               </div>
               <?php include('typed.php') ?>
+              <?php include('gear.php') ?>
                     </div>
                   </div>
                     <!-- <!-=-parallax image div
