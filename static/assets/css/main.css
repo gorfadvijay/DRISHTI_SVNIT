@@ -1,0 +1,379 @@
+
+  
+#navbar > ul {
+   border-bottom: 2px solid #055;
+   border-radius: 10px;
+} 
+
+#navbar > ul >li:hover{
+   color: #fff;
+   background-color:#000;
+   border-color:#000;
+} 
+
+#navbar > ul >li:hover > a:link{
+   color:#fff;
+   letter-spacing: 1px;
+}
+
+#navbar > ul >li:hover > ul{
+   border-left : 2px solid grey;
+   border-bottom : 2px solid grey;
+   padding: 10px 0 10px 0;
+}
+
+#navbar > ul >li:hover > ul > li > a{
+   height: 40px;
+   padding:0 5px 0 10px;
+   line-height: 40px;
+}
+
+#navbar > ul >li:hover > ul > li:hover > a{
+   border-right : 2px solid grey;
+   height: 50px;
+   line-height: 50px;
+}
+
+</style>
+ 
+
+	
+<!--<style>/*custom */
+@keyframes typing { from { width: 0; } }
+@keyframes blink-caret { 50% { border-color: transparent; } }
+
+#yed {
+    font: bold 200% Consolas, Monaco, monospace;
+    border-right: .1em solid;
+    width: auto; /* fallback */
+    width: 62vw; /* # of chars */
+    margin: 2em 1em;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 5s steps(30, end), /* # of steps = # of chars */
+               blink-caret .5s step-end 1 alternate;
+}
+
+#zed{
+    font: bold 200% Consolas, Monaco, monospace;
+    border-right: .1em solid;
+    width: 9em; /* fallback */
+    width: 25ch; /* # of chars */
+    margin: 2em 1em;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 5s steps(30, end), /* # of steps = # of chars */
+               blink-caret .5s step-end 1 alternate;
+    animation-delay:5s;
+    opacity:0;
+}
+</style>-->
+<style type="text/css">
+.sign {
+    float: left;
+    margin: 100px 3em 0;
+    /* sign width */
+    width: 150px;
+    /* Give it a white border */
+    border: 5px solid #fff;
+    /* pad content text away from the edges of the sign */
+    padding: 0.25em 1em .75em;
+    /* give it a drop shadow and inset shadow at the top */
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.4), 0 5px 10px rgba(0, 0, 0, 0.4);
+    /* setup a default background red and a red gradient where supported */
+    background-color: #555;
+    /*#d10000;*/
+    //background: linear-gradient(top, #ff9696 0%, #fff 100%);
+    /* attempt to get rid of jaggies when rotated */
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    /* nice rounded corners */
+    border-radius: 15px;
+    /* set the swing origin (nail body) */
+    transform-origin: 50% -65px;
+    /* animate the swing with pendulum-style easing */
+    animation: swing 1.5s infinite alternate ease-in-out;
+}
+
+.sign:hover {
+    /* Hover over the sign to stop the animation */
+    animation-play-state: paused;
+}
+
+.sign P {
+    /* Typography */
+    font-smoothing: antialiased;
+    /* let's have uppercase.. */
+    text-transform: uppercase;
+    /* Arial... */
+    font-familty: Arial, sans-serif;
+    /* bold... */
+    font-weight: bold;
+    /* white... */
+    color: #fff;
+    /* centered text */
+    text-align: center;
+    /* with a subtle drop shadow for definition */
+    text-shadow: 0 0 2px rgba(0, 0, 0, 1);
+    /* kill any default P margins and center it */
+    margin: 0 auto;
+    line-height: normal;
+}
+
+.sign {
+    margin-left: 200px;
+}
+
+.sign P {
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+
+.sign SPAN {
+    font-size: 0.55em;
+    line-height: 2em;
+    display: block;
+    margin-bottom: 0;
+}
+
+.sign IMG {
+    display: block;
+    width: 3.5em;
+    margin: auto;
+}
+
+.sign:before {
+    /* string */
+    position: absolute;
+    content: "";
+    /* string thickness/color */
+    border: 2px dotted #444;
+    /* hide string after connection with sign */
+    border-bottom: none;
+    border-left: none;
+    /* string 'size' (as a -45deg rotated square) */
+    width: 100px;
+    height: 100px;
+    /* string position */
+    top: -55px;
+    left: 50%;
+    margin-left: -50px;
+    /* string construct */
+    transform: rotate(-45deg);
+    /* string curved round nail body (unseen) */
+    border-radius: 0 5px 0 0;
+}
+
+.sign:after {
+    /* nail */
+    position: absolute;
+    content: "";
+    /* nail head size */
+    width: 10px;
+    height: 10px;
+    /* nail head as a circle */
+    border-radius: 50%;
+    /* nail position */
+    top: -75px;
+    left: 50%;
+    margin-left: -4px;
+    /* nail head default color + gradient (where supported) */
+    background: #4c4c4c;
+    background: linear-gradient(top, #4c4c4c 0%, #595959 12%, #666666 25%, #474747 39%, #2c2c2c 50%, #000000 51%, #111111 60%, #2b2b2b 76%, #1c1c1c 91%, #131313 100%);
+}
+
+/* sign swinging animation sequence */
+
+@keyframes swing {
+    0% {
+        transform: rotate(-3deg)
+    }
+    100% {
+        transform: rotate(3deg)
+    }
+}
+
+.price-features {
+    overflow: scroll;
+}
+
+.price-features::-webkit-scrollbar {
+    display: none;
+}
+</style>
+
+</head>
+
+ 
+<style type="text/css">
+/*custom */
+
+.lol p {
+    color: lime;
+    font-family: "Courier";
+    font-size: 2vw;
+    margin: 10px 0 0 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    animation: type 4s steps(60, end);
+    text-align: left;
+    line-height: 3vw;
+}
+
+.lol p:nth-child(2) {
+    animation: type2 8s steps(60, end);
+}
+
+.lol p a {
+    color: lime;
+    text-decoration: none;
+}
+
+.lol span {
+    animation: blink 1s infinite;
+}
+
+.lala {
+    animation: minimize 2s forwards;
+    -webkit-animation-delay: 8s;
+    animation-delay: 8s;
+    animation-timing-function: ease-in;
+}
+
+#mojojo {
+    animation: minimize 2s forwards;
+    animation-direction: reverse;
+    /*animation-delay: 10s;*/
+}
+
+@keyframes type {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes type2 {
+    0% {
+        width: 0;
+    }
+    50% {
+        width: 0;
+    }
+    100% {
+        width: 100;
+    }
+}
+
+@keyframes blink {
+    to {
+        opacity: .0;
+    }
+}
+
+::selection {
+    background: black;
+}
+
+@keyframes minimize {
+    100% {
+        margin-top: 190vh;
+    }
+}
+
+.lala {
+    width: 100%;
+    height: 130%;
+    background-image: url('static/assets/images/terminal-image.png');
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center 40vh;
+    font-size: 5vh
+}
+
+@media only screen and (max-device-width: 900px) {
+    .lol {
+        margin-left: 20vw;
+        margin-top: -20vh;
+    }
+}
+
+@media only screen and (max-device-width: 768px) {
+      footer .row .logos{
+        text-align:center;
+      }
+      footer .row .contact{
+        text-align:center;
+      }
+      footer .copyrit{
+        text-align:center;
+      }
+    }
+    @media only screen and (min-device-width: 770px) {
+      footer .row{
+        padding-left:60px;
+        padding-right:60px;
+      }
+      footer .row .contact{
+        margin-top:20px;text-align: center;
+      }
+      footer .copyrit{
+        text-align: right;padding-top:40px;
+      }
+    }
+<-----footer-------->
+<-----footer-------->
+
+    .teams {
+        transition: transform 1s;
+    }
+
+    .teams:hover {
+        transform: scale(1.02);
+    }
+
+    .smartDisplay {
+        margin: 30px auto;
+        padding: 0;
+        list-syle: none;
+    }
+
+    .smartDisplay li {
+        list-style: none;
+        display: inline-block;
+    }
+
+    .smartDisplay li a {
+        color: black;
+        text-indent: -9999px;
+        display: block;
+        border: 2px solid;
+        height: 12px;
+        width: 12px;
+        line-height: 0;
+        margin: 0 3px;
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        -moz-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        -webkit-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+    }
+
+    .smartDisplay li a:hover {
+        background: black;
+    }
+
+    .smartDisplay li a.active {
+        -moz-transform: translateZ(0);
+        -ms-transform: translateZ(0);
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        background: black;
+    }
+
+<-----footer-------->
+
+
