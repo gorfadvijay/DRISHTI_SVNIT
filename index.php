@@ -110,7 +110,7 @@ include('circuit.php')
 
     <style type="text/css">
       .list-unstyled li{
-        font-size: 17px;
+        font-size: 16px;
       }
     </style>
     <!--end features section-->
@@ -122,7 +122,7 @@ include('circuit.php')
                 <div class="row vertical-align-child">
                     <div class="col-md-5 margin-b-30">
                         <h3>Technovation</h3>
-                        <p style="font-size: 17px;">
+                        <p style="font-size: 18px;">
                             Drishti has been the driving force in igniting the young minds of SVNIT in taking up various technical projects. It boasts of providing a platform to the students where they can collaborate, carry out technical projects and can see their most creative and innovative ideas, and thus their dreams materialize. 
                         </p>
                     </div>
@@ -193,27 +193,7 @@ include('circuit.php')
         <div class="space-60"></div>
     </section>
     <!--end pricing section-->
-    <script src="static/assets/bower_components/jquery/dist/jquery.min.js"></script>
-    <script>
-    setTimeout(function() {
-        document.getElementById("zed").style.opacity = 1;
-    }, 5000);
-    </script>
-    <script type="text/javascript">
-    var clubid = 1;
-    var totalClubs = $(".clubsTabs li").length;
-
-    function translateClub() {
-        var clubId = "#club" + clubid + " a";
-        $(".smartDisplay li .active").removeClass("active");
-        $(".smartDisplay li[id='bu" + clubid + "'] a").addClass("active");
-        $(clubId).tab('show');
-        clubid = (clubid) % totalClubs + 1;
-    }
-    var timers = setInterval(function() {
-        translateClub();
-    }, 6000);
-    </script>
+    
 </body>
 
  <?php
@@ -221,48 +201,10 @@ include('circuit.php')
  ?>
 
   
-  <script>
-  $(document).ready(function(){
-    $("#div1").hide(0).delay(600).curoselfadeIn(5000);
-});
-  </script>
-  <script>
-  function tooglezz() {
-    var godd = document.getElementById("chill");
-    document.getElementById("contacto").style.display = 'none';
-    if (godd.style.display == 'none') {
-      godd.style.display = 'block';
-    } else {
-      godd.style.display = 'none';
-    }
-  }
-
-  function tooglez() {
-    var godd = document.getElementById("contacto");
-    document.getElementById("chill").style.display = 'none';
-    if (godd.style.display == 'none') {
-      godd.style.display = 'block';
-    } else {
-      godd.style.display = 'none';
-    }
-  }
-
-  function revamp() {
-    document.getElementById("chill").style.display = 'none';
-    document.getElementById("contacto").style.display = 'none';
-
-  }
-  </script>
+  
+ 
   <!-- Google Analytics -->
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','../www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-100614593-1', 'auto');
-    ga('send', 'pageview');
-  </script>
+  
       
   <!--  Typed.js Typing Css And Js  -->
  
