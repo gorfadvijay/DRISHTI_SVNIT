@@ -96,7 +96,7 @@ function buildNewNode(x, y) {
 }
 
 function init() {
-	global = { w: Math.min(1400, window.innerWidth), h: Math.min(300, window.innerHeight), s: 10 };
+	global = { w: Math.min(1402, window.innerWidth), h: Math.min(300, window.innerHeight), s: 10 };
 	global.fW = Math.floor(global.w / global.s);
 	global.fH = Math.floor(global.h / global.s);
 

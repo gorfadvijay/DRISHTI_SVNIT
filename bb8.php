@@ -44,11 +44,13 @@
 
 
 .bb8 {
- position: absolute;
-  margin-left: 70px;
+ /*for Adjusting Height of bb8 */
+position: relative; 
+ margin-left: 70px;
   width: 140px;
-  bottom: -350px;
+  bottom: -100px;
   left: 0;
+  
 }
 
 .antennas {
