@@ -114,15 +114,15 @@ include('circuit.php')
       }
     </style>
     <!--end features section-->
-    <section class="showcase-section">
+    <section class="showcase-section" style="background-color: #107896 ">
         <div class="space-90"></div>
         <div class="container teams">
            
             <div class="container">
                 <div class="row vertical-align-child">
                     <div class="col-md-5 margin-b-30">
-                        <h3>Technovation</h3>
-                        <p style="font-size: 18px;">
+                        <h3 style="color:  #ffFFFF ">Technovation</h3>
+                        <p style="font-size: 18px;color:  #ffFFFF">
                             Drishti has been the driving force in igniting the young minds of SVNIT in taking up various technical projects. It boasts of providing a platform to the students where they can collaborate, carry out technical projects and can see their most creative and innovative ideas, and thus their dreams materialize. 
                         </p>
                     </div>
@@ -135,7 +135,20 @@ include('circuit.php')
             </div>
     </section>
     <!--end showcase section-->
-    
+    <!--eye   bot-->
+
+    <div style="max-width: 1800px;height: 400px;width: 100%; background-color:#000 ">
+         <?php
+        include('eyebot.php')
+    ?>
+     
+    </div>
+
+    <!--eye   bot-->
+
+
+
+
     <!--end showcase section-->
     <section class="pricing-section">
         <div class="space-90"></div>
@@ -193,7 +206,13 @@ include('circuit.php')
         <div class="space-60"></div>
     </section>
     <!--end pricing section-->
-    
+    <div style="background-color: #a2a456;">
+        <div style="max-width: 900px;height: 345px;width: 100%; ">
+         <?php
+        include('botarm.php')
+    ?>
+    </div>
+    </div>
 </body>
 
  <?php
