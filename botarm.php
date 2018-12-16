@@ -150,12 +150,12 @@
 #section {
   height: 73vh;
   text-align: center;
-  overflow: hidden;
+ 
   background:#1d1d1d ;
 }
 
 #arm-svg {
-  max-width: 100%;
+  width: 120%;
   height: auto;
 }
 
