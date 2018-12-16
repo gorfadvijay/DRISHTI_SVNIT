@@ -46,10 +46,13 @@
 .bb8 {
  /*for Adjusting Height of bb8 */
 position: relative; 
- margin-left: 70px;
+ margin-left: -160px;
+ margin-right: -160px;
   width: 140px;
   bottom: -100px;
-  left: 0;
+  right: 10%;
+ 
+
   
 }
 

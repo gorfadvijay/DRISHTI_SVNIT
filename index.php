@@ -85,7 +85,7 @@ include('header.php')
     </script>
     <!--intro section end-->
 
-<div class="bg" style="max-width: 20000px; height: 250px; width: 100%">
+<div class="bg col-sm-4 margin-b-30 " style="max-width: 20000px; height: 250px; width: 100%">
   <?php include('bb8.php') ?>
 </div>
 
