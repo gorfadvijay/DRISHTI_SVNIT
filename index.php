@@ -207,7 +207,7 @@ include('circuit.php')
     <!--end pricing section-->
     
 
- <div class="row container-fluid" style="background-color: #1d1d1d !important">
+ <div class="container-fluid" style="background-color: #1d1d1d !important">
     <div class="col-sm-7">
       
             <div >
