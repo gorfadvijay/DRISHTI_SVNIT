@@ -145,15 +145,13 @@
    
 
 <style type="text/css">
-    body {
-  margin: 0;
-}
+   
 
 #section {
   height: 73vh;
   text-align: center;
   overflow: hidden;
-  background: #a2a456 ;
+  background:#1d1d1d ;
 }
 
 #arm-svg {

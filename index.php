@@ -19,7 +19,6 @@ include('header.php')
 ?>
   
 
-<link href="static/events/css/main.css" rel="stylesheet">
 
 
 <body>
@@ -203,16 +202,33 @@ include('circuit.php')
                     
         
         </div>
-        <div class="space-60"></div>
+       
     </section>
     <!--end pricing section-->
-    <div style="background-color: #a2a456;">
-        <div style="max-width: 900px;height: 345px;width: 100%; ">
-         <?php
-        include('botarm.php')
-    ?>
+    
+
+ <div class="row" style="background-color: #1d1d1d !important">
+    <div class="col-sm-7">
+      
+            <div >
+             <?php
+            include('botarm.php')
+            ?>
+            </div>
+    </div>  
+           
+     <div class="col-sm-5">
+             <?php
+            include('rocket.php')
+            ?>
+            </div>
     </div>
-    </div>
+
+ 
+
+</div>
+</section>
+
 </body>
 
  <?php
