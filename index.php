@@ -118,7 +118,7 @@ include('circuit.php')
         <div class="container teams">
            
             <div class="container">
-                <div class="row vertical-align-child">
+                <div class=" vertical-align-child">
                     <div class="col-md-5 margin-b-30">
                         <h3 style="color:  #ffFFFF ">Technovation</h3>
                         <p style="font-size: 18px;color:  #ffFFFF">
@@ -153,7 +153,7 @@ include('circuit.php')
         <div class="space-90"></div>
         <div class="container teams">
             
-            <div class="row">
+            <div class="">
                 <div class="col-sm-4 margin-b-30">
                     <div class="price-box">
                         <div class="price-header">

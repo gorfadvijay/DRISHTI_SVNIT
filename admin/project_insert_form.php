@@ -1,4 +1,8 @@
-<!DOCTYPE html>
+<?php
+
+   include('header.php');
+
+?><!DOCTYPE html>
 <html>
 <head>
 	<title>Insert Project</title>
@@ -22,20 +26,25 @@
   </div>
   <div class="form-group">
     <label for="Project_name">Project Image:</label>
-    <input type="file" class="form-control" name="Filename">
+    <input type="file" class="form-control" name="img">
   </div>
   <div class="form-group">
     <label for="Project_name">Project PDF:</label>
-    <input type="text" class="form-control" name="Project_pdf">
+     <input type="file" class="form-control" name="pdf">
   </div>
   <div class="form-group">
     <label for="Project_name">Project video:</label>
-    <input type="text" class="form-control" name="Project_video">
+    <input type="file" class="form-control" name="video">
   </div>
   
   <button type="submit" class="btn btn-default">Submit</button>
 </form>
-<?php echo $display ; ?>
+
 </div>
 </body>
 </html>
+<?php
+
+   include('footer.php');
+
+?>

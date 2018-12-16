@@ -10,20 +10,40 @@ if(isset($_POST['Project_des'])){
     $des=$_POST['Project_des'];
 };
 
-if(isset($_POST['Project_pdf'])){
-    $pdf=$_POST['Project_pdf'];
-};
-if(isset($_POST['Project_video'])){
-    $video=$_POST['Project_video'];
-}
+
 $id="";
-include('connect.php');
-  $fileName = $_FILES['Filename']['name'];
-  
-  $target = "../image/";   
+/* For Img Files In Database */
+  $fileName = $_FILES['img']['name'];
+  $targetstore = "../resourse/project/img/"; 
+  $target = "resourse/img/"; 
+
+    $imgstore = $targetstore.$fileName; 
     $img = $target.$fileName; 
-    $tempFileName = $_FILES["Filename"]["tmp_name"];
-    $result = move_uploaded_file($tempFileName,$img);
+    $tempFileName = $_FILES["img"]["tmp_name"];
+    $result = move_uploaded_file($tempFileName,$imgstore);
+
+
+    /* For pdf Files In Database */
+  $fileName = $_FILES['img']['name'];
+  $targetstore = "../resourse/project/pdf/"; 
+  $target = "resourse/pdf/"; 
+
+    $pdfstore = $targetstore.$fileName; 
+    $pdf = $target.$fileName; 
+    $tempFileName = $_FILES["pdf"]["tmp_name"];
+    $result = move_uploaded_file($tempFileName,$pdfstore);
+
+
+/* For pdf Files In Database */
+  $fileName = $_FILES['img']['name'];
+  $targetstore = "../resourse/project/video/"; 
+  $target = "resourse/video/"; 
+
+    $videostore = $targetstore.$fileName; 
+    $video = $target.$fileName; 
+    $tempFileName = $_FILES["video"]["tmp_name"];
+    $result = move_uploaded_file($tempFileName,$videostore);
+
 
 $insert_sql = "INSERT INTO 
 project (id,name,des,img,pdf,video)
@@ -31,10 +51,10 @@ project (id,name,des,img,pdf,video)
 VALUES ('$id','$name','$des','$img','$pdf','$video')";
 
 if (mysqli_query($dbconn, $insert_sql)) {
-	?>
+  ?>
  <script language="JavaScript" type="text/javascript">
             alert ("new record added successfully!!!!");
-            window.location.assign("project_insert_form.html");
+            window.location.assign("project_insert_form.php");
             </script>
            <?php 
 
@@ -42,7 +62,7 @@ if (mysqli_query($dbconn, $insert_sql)) {
    ?>
  <script language="JavaScript" type="text/javascript">
             alert ("error in adding record !!!!");
-            window.location.assign("project_insert_form.html");
+            window.location.assign("project_insert_form.php");
             </script>
            <?php 
 

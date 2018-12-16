@@ -10,8 +10,8 @@
   <div class="container ">
     
     <ul class="nav navbar-nav">
-      <li ><a class="logo" href="h1cktheuniverse.ml">Drishti</a></li>
-      <li ><a href="h1cktheuniverse.ml">Home</a></li>
+      <li ><a class="logo" href="http://h1cktheuniverse.ml">Drishti</a></li>
+      <li ><a href="http://h1cktheuniverse.ml">Home</a></li>
       <li   ><a href="#">Contact Dev</a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">

@@ -5,7 +5,7 @@
 ?> <!DOCTYPE html>
  <?php 
 include 'connect.php';
-$sql = "SELECT * FROM `project` ";
+$sql = "SELECT * FROM `competition` ";
 $result = mysqli_query($dbconn, $sql);
 
 
@@ -14,9 +14,9 @@ if (mysqli_num_rows($result) > 0) {
         echo "
          <html>
         <body>
-        <div>Project Name :$row[name]</div>
+        <div>competition Name :$row[name]</div>
         <br>
-        <div>Project pdf : <a href='project_delete.php?id= $row[id]'> Delete</a></div><br><br>-----------------<br>
+        <div>competition pdf : <a href='competition_delete.php?id= $row[id]'> Delete</a></div><br><br>-----------------<br>
         <div>
             $row[video]
         </div>

@@ -1,20 +1,20 @@
 <?php 
 include 'connect.php';
-$sql = "SELECT * FROM `event`";
+$sql = "SELECT * FROM `competition`";
 $result = mysqli_query($dbconn, $sql);
 
-if(isset($_POST['event_name'])){
-    $name=$_POST['event_name'];
+if(isset($_POST['competition_name'])){
+    $name=$_POST['competition_name'];
 };
-if(isset($_POST['event_des'])){
-    $des=$_POST['event_des'];
+if(isset($_POST['competition_des'])){
+    $des=$_POST['competition_des'];
 };
 
 
 $id="";
 /* For Img Files In Database */
   $fileName = $_FILES['img']['name'];
-  $targetstore = "../resourse/event/img/"; 
+  $targetstore = "../resourse/competition/img/"; 
   $target = "resourse/img/"; 
 
     $imgstore = $targetstore.$fileName; 
@@ -25,7 +25,7 @@ $id="";
 
     /* For pdf Files In Database */
   $fileName = $_FILES['img']['name'];
-  $targetstore = "../resourse/event/pdf/"; 
+  $targetstore = "../resourse/competition/pdf/"; 
   $target = "resourse/pdf/"; 
 
     $pdfstore = $targetstore.$fileName; 
@@ -36,7 +36,7 @@ $id="";
 
 /* For pdf Files In Database */
   $fileName = $_FILES['img']['name'];
-  $targetstore = "../resourse/event/video/"; 
+  $targetstore = "../resourse/competition/video/"; 
   $target = "resourse/video/"; 
 
     $videostore = $targetstore.$fileName; 
@@ -46,7 +46,7 @@ $id="";
 
 
 $insert_sql = "INSERT INTO 
-event (id,name,des,img,pdf,video)
+competition (id,name,des,img,pdf,video)
 
 VALUES ('$id','$name','$des','$img','$pdf','$video')";
 
@@ -54,7 +54,7 @@ if (mysqli_query($dbconn, $insert_sql)) {
   ?>
  <script language="JavaScript" type="text/javascript">
             alert ("new record added successfully!!!!");
-            window.location.assign("event_insert_form.php");
+            window.location.assign("competition_insert_form.php");
             </script>
            <?php 
 
@@ -62,14 +62,14 @@ if (mysqli_query($dbconn, $insert_sql)) {
    ?>
  <script language="JavaScript" type="text/javascript">
             alert ("error in adding record !!!!");
-            window.location.assign("event_insert_form.php");
+            window.location.assign("competition_insert_form.php");
             </script>
            <?php 
 
 }
 mysqli_close($dbconn);
 
-//header("Location:event_insert_form.html");
+//header("Location:competition_insert_form.html");
 
 
 
