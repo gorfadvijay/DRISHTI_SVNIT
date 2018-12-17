@@ -22,7 +22,7 @@
 
 ​
 
-<div class="container">
+<div class="container" style="margi">
 
   <div class="jumbotron"  style="background-color:#292F33;color: #E1E8ED">
 
@@ -32,9 +32,9 @@
 
 </div>
 
-<div class="container">
+<div class="container " style="margin-left: -15px;">
  
-  <table class="table table-condensed" >
+  <table class="table table-hover-dark jumbotron " >
     <thead style="background-color: #1a1a1a;color: #fff">
       <tr>
         <th><h2>Project</h2></th>
