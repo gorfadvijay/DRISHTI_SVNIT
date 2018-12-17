@@ -6,14 +6,14 @@ $sql = "DELETE FROM event WHERE id=$id";
 if (mysqli_query($dbconn, $sql)) {?>
               <script language="JavaScript" type="text/javascript">
             alert ("record deleted succesfully!!!!");
-            window.location.assign("event_delete&display.php");
+            window.location.assign("event_delete_table.php");
             </script>
            <?php 
 }
  else {?>
               <script language="JavaScript" type="text/javascript">
             alert ("error in deleting record!!!!");
-            window.location.assign("event_delete&display.php");
+            window.location.assign("event_delete_table.php");
             </script>
            <?php 
        }

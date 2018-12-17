@@ -5,39 +5,80 @@
 ?>
 
 <!DOCTYPE html>
-<html>
-<head>
-	<title>login system</title>
-</head>
-<body>
-<a href="project_delete_table.php"> delete Record</a>
-<br>----------------------------<br>
-<h2><a href="project_insert_form.php">Add Project</a></h2>
-<br>----------------=============-----------------<br>
-<h2><a href="project.php">See Project</a></h2>
-<br>----------------=============-----------------<br>
-<h2><a href="../project1.php">delete Project with graphic</a></h2>
-<br>----------------=============-----------------<br>
-<h2><a href="project_delete&display.php">delete Project</a></h2>
-<br>----------------=============-----------------<br>
-<br>----------------=============-----------------<br>
-<a href="display&delete.php"> delete event</a>
-<br>----------------------------<br>
-<h2><a href="event_insert_form.php">Add event</a></h2>
-<br>----------------=============-----------------<br>
-<h2><a href="event.php">See event</a></h2>
-<br>----------------=============-----------------<br>
-<h2><a href="event_delete&display.php">delete event</a></h2>
-<br>----------------=============-----------------<br>
-<h2><button>
-	<a href="logout.php"> logout</a>
-</button></h2>
 
+<html lang="en">
+
+<head>
+
+  <title>Admin Panel</title>
+
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+
+​
+
+<div class="container">
+
+  <div class="jumbotron">
+
+    <h1 class="text-center">Admin Panel</h1>        
+
+       
+
+</div>
+
+<div class="container">
+ 
+  <table class="table table-condensed">
+    <thead>
+      <tr>
+        <th><h2>Project</h2></th>
+        <th><h2>Event</h2></th>
+        <th><h2>Competition</h2></th>
+        <th><h2>Team</h2></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="btn btn-success " href="project_insert_form.php">ADD</a> </td>
+        <td><a class="btn btn-success " href="event_insert_form.php">ADD</a> </td>
+        <td><a class="btn btn-success " href="competition_insert_form.php">ADD</a> </td>
+        
+        <td><a class="btn btn-success " href="team_insert_form.php">ADD</a> </td>
+      </tr>
+      <tr>
+        <td><a class="btn btn-danger " href="project_delete_table.php">DELETE</a> </td>
+        <td><a class="btn btn-danger " href="event_delete_table.php">DELETE</a> </td>
+        <td><a class="btn btn-danger" href="competition_delete_table.php">DELETE</a> </td>
+        <td><a class="btn btn-danger " href="team_delete_table.php">DELETE</a> </td>
+        
+      </tr>
+      <tr>
+        <td><a class="btn btn-info " href="404.php">VIEW</a></td>
+        <td><a class="btn btn-info " href="404.php">VIEW</a></td>
+        <td><a class="btn btn-info " href="404.php">VIEW</a></td>
+        <td><a class="btn btn-info " href="404.php">VIEW</a></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
+​
 
 </body>
+
 </html>
-<?php
+
+​<?php
 
    include('footer.php');
 
 ?>
+

@@ -6,14 +6,14 @@ $sql = "DELETE FROM project WHERE id=$id";
 if (mysqli_query($dbconn, $sql)) {?>
               <script language="JavaScript" type="text/javascript">
             alert ("record deleted succesfully!!!!");
-            window.location.assign("project_delete&display.php");
+            window.location.assign("project_delete_table.php");
             </script>
            <?php 
 }
  else {?>
               <script language="JavaScript" type="text/javascript">
             alert ("error in deleting record!!!!");
-            window.location.assign("project_delete&display.php");
+            window.location.assign("project_delete_table.php");
             </script>
            <?php 
        }

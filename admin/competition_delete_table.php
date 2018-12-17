@@ -5,7 +5,7 @@ include 'connect.php';
 include 'header.php';
 
 
-$sql = "SELECT * FROM `project` ";
+$sql = "SELECT * FROM `competition` ";
 $result = mysqli_query($dbconn, $sql);
 $id="";
 $name="";
@@ -40,7 +40,7 @@ if (mysqli_num_rows($result) > 0) {
 
         <td style="width: 300px;"><?php echo $row[1]; ?></td>
 
-        <td style="width: 300px;"><?php echo "<a class='btn btn-danger' role='button' href='project_delete.php?id= $row[0]'> Delete</a> " ?></td>
+        <td style="width: 300px;"><?php echo "<a class='btn btn-danger' role='button' href='competition_delete.php?id= $row[0]'> Delete</a> " ?></td>
 
       </tr>
 
