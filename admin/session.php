@@ -18,7 +18,7 @@
    if(!isset($_SESSION['login_user'])){?>
               <script language="JavaScript" type="text/javascript">
             alert ("Please login First !!!!");
-            window.location.assign("../login.html");
+            window.location.assign("login_form.php");
             </script>
              <?php 
             }

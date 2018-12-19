@@ -1,10 +1,24 @@
 <?php 
+include('connect.php');
+   session_start();
+   if (isset($_SESSION['login_user'])) {
+   $user_check = $_SESSION['login_user'];
+   ;
+} else {
+    $user_check = 1;
+}
+   
 
- include('session.php');
-if(isset($_SESSION['login_user'])){
-    header('Location: index.php');
+if(isset($_SESSION['login_user'])){?>
+     <script language="JavaScript" type="text/javascript">
+           window.location.assign("index.php");
+            </script>
+    <?php
 } 
 else{
-header('Location: login_form.php');
+?> <script language="JavaScript" type="text/javascript">
+           window.location.assign("login_form.php");
+            </script>
+    <?php
 }
 ?>
