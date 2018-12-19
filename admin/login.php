@@ -25,7 +25,7 @@
       }else {?>
               <script language="JavaScript" type="text/javascript">
             alert ("login failed !!!!");
-            window.location.assign("login.html");
+            window.location.assign("login_form.php");
             </script>
              <?php 
             }

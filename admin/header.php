@@ -11,12 +11,12 @@
     
     <ul class="nav navbar-nav">
       <li ><a class="logo" href="http://h1cktheuniverse.ml">Drishti</a></li>
-      <li ><a href="http://h1cktheuniverse.ml">Home</a></li>
+      <li ><a href="../index.php">Home</a></li>
       <li ><a href="index.php">Admin Panel</a></li>
       <li   ><a href="#">Contact Dev</a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
-      <li   ><a href="login.php"><span class="glyphicon glyphicon-user"></span> Login</a></li>
+      <li   ><a href="admin.php"><span class="glyphicon glyphicon-user"></span> Login</a></li>
       <li  ><a href="logout.php"><span class="glyphicon glyphicon-log-in"></span> Log out</a></li>
     </ul>
   </div>

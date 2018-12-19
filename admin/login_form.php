@@ -1,3 +1,7 @@
+<?php
+include ('header.php')
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,7 +16,7 @@
 
 <div class="container">
   <h2>Admin Login  </h2>
-  <form action="admin/login.php" method="POST">
+  <form action="login.php" method="POST">
     <div class="form-group">
       <label for="username">Username:</label>
       <input type="username" class="form-control" id="username" placeholder="Enter Username" name="username">
@@ -30,3 +34,6 @@
 
 </body>
 </html>
+<?php
+include ('footer.php')
+?>

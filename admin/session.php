@@ -1,8 +1,13 @@
 <?php
    include('connect.php');
    session_start();
-   
+   if (isset($_SESSION['login_user'])) {
    $user_check = $_SESSION['login_user'];
+   ;
+} else {
+    $user_check = 1;
+}
+   
    
    $ses_sql = mysqli_query($dbconn,"select username from admin where username = '$user_check' ");
    
@@ -18,3 +23,4 @@
              <?php 
             }
 ?>
+

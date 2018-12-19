@@ -38,7 +38,7 @@
         
         
         <li><a href="img_upload.html">img </a></li>
-      <li><a href="login.html" class="btn btn-rounded btn-primary">Admin</a></li>
+      <li><a href="admin/admin.php" class="btn btn-rounded btn-primary">Admin</a></li>
       </ul>
     </div>
     <!--/.nav-collapse -->
