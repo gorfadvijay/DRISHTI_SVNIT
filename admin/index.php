@@ -48,9 +48,10 @@
       <tr>
         <td><a class="btn btn-success " href="project_insert_form.php">_ADD_</a> </td>
         <td><a class="btn btn-success " href="event_insert_form.php">_ADD_</a> </td>
+        <td><a class="btn btn-success " href="team_insert_form.php">_ADD_</a> </td>
+
         <td><a class="btn btn-success " href="competition_insert_form.php">_ADD_</a> </td>
         
-        <td><a class="btn btn-success " href="team_insert_form.php">_ADD_</a> </td>
       </tr>
       <tr>
         <td><a class="btn btn-info " href="404.php">_VIEW_</a></td>
@@ -61,8 +62,9 @@
       <tr>
         <td><a class="btn btn-danger " href="project_delete_table.php">DELETE</a> </td>
         <td><a class="btn btn-danger " href="event_delete_table.php">DELETE</a> </td>
-        <td><a class="btn btn-danger" href="competition_delete_table.php">DELETE</a> </td>
         <td><a class="btn btn-danger " href="team_delete_table.php">DELETE</a> </td>
+        
+        <td><a class="btn btn-danger" href="competition_delete_table.php">DELETE</a> </td>
         
       </tr>
       

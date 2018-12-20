@@ -34,7 +34,7 @@
         <li><a href="event.html">EVENTS</a></li>
         <li><a href="Project.php">PROJECTS</a></li>
         <li><a href="competition.html">COMPETITION</a></li>
-        <li><a href="team.html">TEAM</a></li>
+        <li><a href="team.php">TEAM</a></li>
         
         
         <li><a href="img_upload.html">img </a></li>
