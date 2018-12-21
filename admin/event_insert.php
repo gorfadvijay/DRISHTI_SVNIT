@@ -15,7 +15,7 @@ $id="";
 /* For Img Files In Database */
   $fileName = $_FILES['img']['name'];
   $targetstore = "../resourse/event/img/"; 
-  $target = "resourse/img/"; 
+  $target = "resourse/event/img/"; 
 
     $imgstore = $targetstore.$fileName; 
     $img = $target.$fileName; 
@@ -26,7 +26,7 @@ $id="";
     /* For pdf Files In Database */
   $fileName = $_FILES['img']['name'];
   $targetstore = "../resourse/event/pdf/"; 
-  $target = "resourse/pdf/"; 
+  $target = "resourse/event/pdf/"; 
 
     $pdfstore = $targetstore.$fileName; 
     $pdf = $target.$fileName; 
@@ -37,7 +37,7 @@ $id="";
 /* For pdf Files In Database */
   $fileName = $_FILES['img']['name'];
   $targetstore = "../resourse/event/video/"; 
-  $target = "resourse/video/"; 
+  $target = "resourse/event/video/"; 
 
     $videostore = $targetstore.$fileName; 
     $video = $target.$fileName; 
