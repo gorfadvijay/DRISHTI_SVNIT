@@ -5,16 +5,21 @@
 
 <meta http-equiv="content-type" content="text/html;charset=utf-8" />
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>
-		
-	   Drishti-SVNIT
-	  
-	</title>
-	<?php
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>
+    
+     Drishti-SVNIT
+    
+  </title>
+  <?php
   include("header.php ");
+  include 'connect.php';
+
+$sql = "SELECT * FROM `project` ";
+$result = mysqli_query($dbconn, $sql);
+
   ?>
 
 
@@ -22,50 +27,63 @@
 <body>
    
    
-  
-<?php 
-include 'connect.php';
-
-$sql = "SELECT * FROM `project` ";
-$result = mysqli_query($dbconn, $sql);
-
-
-if (mysqli_num_rows($result) > 0) {
-    while($row = mysqli_fetch_assoc($result)) {
-        echo "
+ 
+           
   </section>
    
-     <section class='showcase-section grey-bg'>
-        <div class='space-90'></div>
-        <div class='container teams'>
-            <h1 class='center-title'>$row[name]</h1>
-            <div class='container'>
-                <div class='row vertical-align-child'>
-                    <div class='col-md-5 margin-b-30'>
-                        <h3><a href='#'>$row[name]</a></h3>
-                        <p>
-                           $row[des]
-                        </p>
-                    </div>
-                    <div class='col-md-6 col-md-offset-1 margin-b-30' style='height:600px;overflow: hidden'>
-                        <img src='$row[img]' alt='' class='img-responsive center-img' style='width:80%'>
-                    </div>
-                </div>
-                <div class='space-60'></div>
-            </div>
-    </section>
+     <section class=' grey-bg' style="">
+      
         
-        ";
+
+        <div class='container ' style="margin-top: 100px;">
+           <?php 
+if (mysqli_num_rows($result) >0 ) {
+  
+    while($row = mysqli_fetch_array($result)) {?>
+            <h1 class='center-title'><?php echo$row[1]; ?></h1>
+            <div class='container ' style="margin-bottom: 60px;">
+                        <div class='row '>
+                                    <div class='col-md-4'>
+                                                <h3><a href='#'><?php echo$row[1]; ?></a></h3>
+                                                <p>
+                                                   <?php echo$row[2]; ?>
+                                                </p>
+                                    </div>
+                                    <div class='col-md-8 ' style='height:100%; width: 100%  overflow: hidden'>
+                                                <img src='<?php echo$row[3]; ?>' alt='' class='img-responsive center-img img-thumbnail ' style='width:80%'>
+                                    </div>
+
+                                    <div class='col-md-12 text-center ' style='height:100%; width: 100% ; margin-top:30px; margin-bottom: 50px; '>  <button type="button" class="btn btn-info  btn-lg" data-toggle="collapse" data-target="#<?php echo$row[0]; ?>">click here for more</button> </div>
+                                              <div id="<?php echo$row[0]; ?>" class="collapse">
+
+                                                <a  style='margin-left: px;margin-top: 10px;margin-bottom: 20px;
+                                                width: 50%;' class="btn btn-lg btn-success" href="<?php echo$row[4] ?>"  >Documantation Pdf </a>
+                                                  <video width="100%;" height="auto" controls>
+                                                    <source src="<?php echo$row[5] ?>" type="video/mp4" alt="Video Not supported in your browser" >
+                                                    
+                                                   
+                                                  </video> 
+                                                                              
+                                              </div>
+                                 
+                        </div>
+                        
+            </div>
+             <?php
        
-    }
 }
+}
+
 else {
     echo "0 results";
 };
 
-
 ?>
- 
+          </div>
+
+   
+    </section>
+    
     
  <?php
   include("footer.php ");
