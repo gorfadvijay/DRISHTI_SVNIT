@@ -9,6 +9,9 @@ if(isset($_POST['Project_name'])){
 if(isset($_POST['Project_des'])){
     $des=$_POST['Project_des'];
 };
+if(isset($_POST['video'])){
+    $video=$_POST['video'];
+};
 
 
 $id="";
@@ -24,7 +27,7 @@ $id="";
 
 
     /* For pdf Files In Database */
-  $fileName = $_FILES['img']['name'];
+  $fileName = $_FILES['pdf']['name'];
   $targetstore = "../resourse/project/pdf/"; 
   $target = "resourse/project/pdf/"; 
 
@@ -33,16 +36,6 @@ $id="";
     $tempFileName = $_FILES["pdf"]["tmp_name"];
     $result = move_uploaded_file($tempFileName,$pdfstore);
 
-
-/* For pdf Files In Database */
-  $fileName = $_FILES['img']['name'];
-  $targetstore = "../resourse/project/video/"; 
-  $target = "resourse/project/video/"; 
-
-    $videostore = $targetstore.$fileName; 
-    $video = $target.$fileName; 
-    $tempFileName = $_FILES["video"]["tmp_name"];
-    $result = move_uploaded_file($tempFileName,$videostore);
 
 
 $insert_sql = "INSERT INTO 

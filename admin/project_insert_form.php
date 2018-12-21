@@ -33,8 +33,8 @@
      <input type="file" class="form-control" name="pdf">
   </div>
   <div class="form-group">
-    <label for="Project_name">Project video:</label>
-    <input type="file" class="form-control" name="video">
+    <label for="Project_name">Project video Youtube Link:</label>
+    <input type="text" class="form-control" name="video">
   </div>
   
   <button type="submit" class="btn btn-default">Submit</button>

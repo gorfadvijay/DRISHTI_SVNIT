@@ -9,6 +9,9 @@ if(isset($_POST['competition_name'])){
 if(isset($_POST['competition_des'])){
     $des=$_POST['competition_des'];
 };
+if(isset($_POST['video'])){
+    $video=$_POST['video'];
+};
 
 
 $id="";
@@ -24,7 +27,7 @@ $id="";
 
 
     /* For pdf Files In Database */
-  $fileName = $_FILES['img']['name'];
+  $fileName = $_FILES['pdf']['name'];
   $targetstore = "../resourse/competition/pdf/"; 
   $target = "resourse/competition/pdf/"; 
 
@@ -35,7 +38,7 @@ $id="";
 
 
 /* For pdf Files In Database */
-  $fileName = $_FILES['img']['name'];
+  $fileName = $_FILES['video']['name'];
   $targetstore = "../resourse/competition/video/"; 
   $target = "resourse/competition/video/"; 
 

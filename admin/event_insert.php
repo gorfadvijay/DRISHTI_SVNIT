@@ -9,6 +9,9 @@ if(isset($_POST['event_name'])){
 if(isset($_POST['event_des'])){
     $des=$_POST['event_des'];
 };
+if(isset($_POST['video'])){
+    $video=$_POST['video'];
+};
 
 
 $id="";
@@ -34,15 +37,6 @@ $id="";
     $result = move_uploaded_file($tempFileName,$pdfstore);
 
 
-/* For pdf Files In Database */
-  $fileName = $_FILES['img']['name'];
-  $targetstore = "../resourse/event/video/"; 
-  $target = "resourse/event/video/"; 
-
-    $videostore = $targetstore.$fileName; 
-    $video = $target.$fileName; 
-    $tempFileName = $_FILES["video"]["tmp_name"];
-    $result = move_uploaded_file($tempFileName,$videostore);
 
 
 $insert_sql = "INSERT INTO 
