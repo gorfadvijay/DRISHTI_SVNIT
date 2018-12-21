@@ -26,18 +26,18 @@
     </div>
     <div id="navbar" class="navbar-collapse collapse">
         <img src="asset/img/logo2.png" alt="" class="logo-default" style="height: 50px;">
-      <ul class="nav navbar-nav navbar-right  ">
+      <ul class="nav navbar-nav navbar-right  " >
         
        
          
       <li><a href="index.php">HOME</a></li>
-        <li><a href="event.html">EVENTS</a></li>
-        <li><a href="Project.php">PROJECTS</a></li>
-        <li><a href="competition.html">COMPETITION</a></li>
+        <li><a href="event.php">EVENTS</a></li>
+        <li><a href="project.php">PROJECTS</a></li>
+        <li><a href="competition.php">COMPETITION</a></li>
         <li><a href="team.php">TEAM</a></li>
         
         
-        <li><a href="img_upload.html">img </a></li>
+        <li><a href="contact.php">Contact Us</a></li>
       <li><a href="admin/admin.php" class="btn btn-rounded btn-primary">Admin</a></li>
       </ul>
     </div>
