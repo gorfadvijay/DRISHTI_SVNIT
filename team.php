@@ -19,7 +19,7 @@ $result = mysqli_query($dbconn, $sql);
     <style type='text/css'>
 
         body{
-            background-color:#0099ff !important;
+            background-color:#f1f9f2 !important;
         }
             
         .our-team{
