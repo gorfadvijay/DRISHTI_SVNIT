@@ -3,7 +3,7 @@
   <link href="static/events/css/style.css" rel="stylesheet">
   <!-- <link href="/static/team/css/style.css" rel="stylesheet"> -->
   <!-- <link href="/static/team/css/style.css" rel="stylesheet"> -->
-  <link href="static/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+ 
   <link href="static/assets/ionicons/css/ionicons.min.css" rel="stylesheet">
   <link href="static/assets/bower_components/flexslider/flexslider.css" rel="stylesheet">
   <link rel='stylesheet' type="text/css" href="static/assets/dzsparallaxer/dzsparallaxer.css" />
@@ -11,8 +11,8 @@
   <link href="static/assets/css/style.css" rel="stylesheet">
   <script src="asset/js/jquery-1.9.1.min.js"></script>
   <link href="static/events/css/main.css" rel="stylesheet">
-  
-   
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <nav class="navbar navbar-default navbar-fixed-top navbar-transparent ">
   <div class="container ">
     <div class="navbar-header">

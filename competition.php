@@ -1,4 +1,11 @@
+<?php
+  include('header.php' );
+  include('connect.php');
 
+$sql = "SELECT * FROM `competition` ";
+$result = mysqli_query($dbconn, $sql);
+
+  ?>
 <!DOCTYPE html>
 <html>
 
@@ -13,14 +20,7 @@
      Drishti-SVNIT
     
   </title>
-  <?php
-  include("header.php ");
-  include 'connect.php';
-
-$sql = "SELECT * FROM `competition` ";
-$result = mysqli_query($dbconn, $sql);
-
-  ?>
+  
 
 
 
@@ -87,7 +87,7 @@ else {
     
     
  <?php
-  include("footer.php ");
+  include('footer.php ');
   ?>
   
 

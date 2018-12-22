@@ -13,7 +13,7 @@
     
   </title>
   <?php
-  include("header.php ");
+  include'header.php';
   include 'connect.php';
 
 $sql = "SELECT * FROM `event` ";
@@ -97,4 +97,6 @@ else {
     
 </body>
         <!-- END fh5co-intro-section -->
-       
+       <?php 
+       include('footer.php')
+       ?>
