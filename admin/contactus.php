@@ -1,6 +1,6 @@
 <?php 
 include 'connect.php';
-$sql = "SELECT * FROM `contact";
+$sql = "SELECT * FROM `contact`";
 $result = mysqli_query($dbconn, $sql);
 
 if(isset($_POST['name'])){
