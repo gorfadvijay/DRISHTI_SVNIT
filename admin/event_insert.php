@@ -14,7 +14,7 @@ if(isset($_POST['video'])){
 };
 
 
-$id="";
+
 /* For Img Files In Database */
   $fileName = $_FILES['img']['name'];
   $targetstore = "../resourse/event/img/"; 
@@ -40,9 +40,9 @@ $id="";
 
 
 $insert_sql = "INSERT INTO 
-event (id,name,des,img,pdf,video)
+event (name,des,img,pdf,video)
 
-VALUES ('$id','$name','$des','$img','$pdf','$video')";
+VALUES ($name','$des','$img','$pdf','$video')";
 
 if (mysqli_query($dbconn, $insert_sql)) {
   ?>

@@ -24,7 +24,7 @@ if(isset($_POST['linkl'])){
 
 
 
-$id="";
+
 /* For Img Files In Database */
   $fileName = $_FILES['img']['name'];
   $targetstore = "../resourse/team/img/"; 
@@ -38,9 +38,9 @@ $id="";
 
   
 $insert_sql = "INSERT INTO 
-team (id,name,branch,img,linkf,linke,linkt,linkl)
+team (name,branch,img,linkf,linke,linkt,linkl)
 
-VALUES ('$id','$name','$branch','$img','$linkf','$linke','$linkt','$linkl')";
+VALUES ($name','$branch','$img','$linkf','$linke','$linkt','$linkl')";
 
 if (mysqli_query($dbconn, $insert_sql)) {
   ?>

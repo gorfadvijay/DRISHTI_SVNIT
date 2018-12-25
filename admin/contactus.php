@@ -12,16 +12,16 @@ if(isset($_POST['email'])){
 if(isset($_POST['msg'])){
     $msg=$_POST['msg'];
 };
-$id="";
+
 
 
 
 
 
 $insert_sql = "INSERT INTO 
-contact (id,name,email,msg)
+contact (name,email,msg)
 
-VALUES ('$id','$name','$email','$msg')";
+VALUES ('$name','$email','$msg')";
 
 if (mysqli_query($dbconn, $insert_sql)) {
   ?>
