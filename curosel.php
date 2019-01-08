@@ -33,7 +33,7 @@
   <span class="dot"></span> 
 </div>
 
-<section class="container-fluid">
+<section >
       <style>
 .mySlides img{
   max-width: 1350px;

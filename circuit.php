@@ -1,12 +1,11 @@
-<div style="height: 310px; "  class="circuit"> 
+<div style="height: 310px;"  class="circuit"> 
 <canvas id="frame" class="circuit"></canvas>
 </div>
 <style type="text/css">
 .circuit{ background-color: #032203;  }
 canvas { 
-padding: 0;
-border: 0;
-overflow: hidden;
+margin : 0;
+display: block;
 width: 100%; 
 max-width: 100%;  }
 </style>

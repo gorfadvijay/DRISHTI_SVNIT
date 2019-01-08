@@ -10,8 +10,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>
-    
-      Drishti- A Revoluntary Concept
+        
+        Drishti- A Revoluntary Concept
     
   </title>
 <?php
@@ -29,7 +29,7 @@ include('header.php')
                   <div class="hero-inner">
                     <div class="hero-content">
               <div class="text-center">
-                            <h1><span class="typed"></span></h1>  
+                            <h1 style="margin-bottom: 30%"><span class="typed"></span></h1>  
               </div>
               <?php include('typed.php') ?>
 
@@ -90,7 +90,7 @@ include('header.php')
 </div>
 
     
-   <div class="bg">
+   <div>
        <?php include('curosel.php') ?>
    </div>
  
