@@ -35,9 +35,10 @@ include('header.php')
 
 
               <!--       BOT                    -->
-    
-              <?php include('gear.php') ?>
 
+             <?php include('gear.php') ?>
+
+             
                     </div>
                    
                   </div>
@@ -95,9 +96,10 @@ include('header.php')
  
 
     <!--        circuit                       -->
-    <?php
-include('circuit.php')
-?>
+   <div style="width: 100%;">
+       <?php include('circuit.php') ?>
+   </div>
+ 
     <!--        circuit                       -->
     
     <!--        BOT                   -->
@@ -210,11 +212,11 @@ include('circuit.php')
  <div class="container-fluid" style="background-color: #1d1d1d !important">
     <div class="col-sm-7">
       
-            <div >
+           
              <?php
             include('botarm.php')
             ?>
-            </div>
+          
     </div>  
            
      <div class="col-sm-5">

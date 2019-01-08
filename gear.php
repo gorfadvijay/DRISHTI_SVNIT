@@ -31,7 +31,8 @@
   bottom: 0;
   left: -150px;
   margin: auto;
-  width: 500000px;
+  max-width: 1200px;
+ 
   height: 50px;
 }
 
@@ -63,13 +64,10 @@
   
 
 
-<body>
-
-  <div id="mech">
+  <div id="mech" style="width: 100%">
   <div id="gearwheel-a"></div>
   <div id="gearwheel-b"></div>
 </div>
   
   
 
-</body>

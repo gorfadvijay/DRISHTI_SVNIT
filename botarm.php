@@ -155,7 +155,7 @@
 }
 
 #arm-svg {
-  width: 120%;
+  width: 100%;
   height: auto;
 }
 
