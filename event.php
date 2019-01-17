@@ -73,7 +73,7 @@ if (mysqli_num_rows($result) >0 ) {
                                                 width: 50%;' class="btn btn-lg btn-success" href="<?php echo$row[4] ?>"  >Documantation Pdf </a>
                                                   <iframe style="height:auto ;width:  100%; " src="<?php echo$row[5]; ?>" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                                                    
-                                                  </video> 
+                                                 
                                                                               
                                               </div>
                                  
