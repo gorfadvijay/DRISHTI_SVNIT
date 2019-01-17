@@ -36,7 +36,7 @@ include('header.php')
 
               <!--       BOT                    -->
 
-             <?php include('gear.php') ?>
+          
 
              
                     </div>
