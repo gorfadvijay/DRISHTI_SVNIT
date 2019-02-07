@@ -36,6 +36,14 @@
         <li><a href="competition.php">COMPETITION</a></li>
         <li><a href="team.php">TEAM</a></li>
         
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">More<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="founder.php">FOUNDER</a></li>
+        <li><a href="achievement.php">ACHIEVEMENT</a></li>
+        <li><a href="gallery.php">GALLERY</a></li>
+        </ul>
+      </li>
+        
         
         <li><a href="contact.php">Contact Us</a></li>
       <li><a href="admin/admin.php" class="btn btn-rounded btn-primary">Admin</a></li>
