@@ -209,7 +209,8 @@ include('header.php')
     <!--end pricing section-->
     
 
- <div class="container-fluid" style="background-color: #1d1d1d !important">
+ <div class="container-fluid aero" style="cursor: url('/static/assets/images/plane.cur')  !important ;background-color: #1d1d1d !important;">
+
     <div class="col-sm-7">
       
            
@@ -232,7 +233,7 @@ include('header.php')
 </section>
 
 </body>
-
+<script src="//code.tidio.co/ss7m8ixb0q9rwiao54g2v5rteqcqfqsp.js"></script>
  <?php
  include('footer.php')
  ?>

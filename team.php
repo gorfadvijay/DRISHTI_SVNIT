@@ -125,7 +125,7 @@ if (mysqli_num_rows($result) >0 ) {
 
   
 
-        <div class='col-md-4 col-sm-6 '>
+        <div class='col-md-3 col-sm-6 '>
             <div class='our-team' style='width: 260px;height: 260px; margin: 30px;'>
                 <div class='pic'>
                     <img src='<?php echo$row[3]; ?>' style='width: 260px;height: 260px;' alt='team member' class='img-responsive'>

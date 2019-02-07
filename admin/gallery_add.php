@@ -1,24 +1,18 @@
 <?php 
 include 'connect.php';
-$sql = "SELECT * FROM `event`";
+$sql = "SELECT * FROM `gallery`";
 $result = mysqli_query($dbconn, $sql);
-
-if(isset($_POST['event_name'])){
-    $name=$_POST['event_name'];
-};
-if(isset($_POST['event_des'])){
-    $des=$_POST['event_des'];
-};
-if(isset($_POST['video'])){
-    $video=$_POST['video'];
-};
+$caption = $_POST['caption'];
+if($caption==''){
+  $caption='Drishti';
+}
 
 
 
 /* For Img Files In Database */
   $fileName = $_FILES['img']['name'];
-  $targetstore = "../resourse/event/img/"; 
-  $target = "resourse/event/img/"; 
+  $targetstore = "../resourse/gallery/img/"; 
+  $target = "resourse/gallery/img/"; 
 
     $imgstore = $targetstore.$fileName; 
     $img = $target.$fileName; 
@@ -27,27 +21,20 @@ if(isset($_POST['video'])){
 
 
     /* For pdf Files In Database */
-  $fileName = $_FILES['pdf']['name'];
-  $targetstore = "../resourse/event/pdf/"; 
-  $target = "resourse/event/pdf/"; 
-
-    $pdfstore = $targetstore.$fileName; 
-    $pdf = $target.$fileName; 
-    $tempFileName = $_FILES["pdf"]["tmp_name"];
-    $result = move_uploaded_file($tempFileName,$pdfstore);
+ 
 
 
 
 $insert_sql = "INSERT INTO 
-event (name,des,img,pdf,video)
+gallery (img,caption)
 
-VALUES ('$name','$des','$img','$pdf','$video')";
+VALUES ('$img','$caption')";
 
 if (mysqli_query($dbconn, $insert_sql)) {
   ?>
  <script language="JavaScript" type="text/javascript">
             alert ("new record added successfully!!!!");
-            window.location.assign("event_insert_form.php");
+            window.location.assign("gallery_add_form.php");
             </script>
            <?php 
 
@@ -55,7 +42,7 @@ if (mysqli_query($dbconn, $insert_sql)) {
    ?>
  <script language="JavaScript" type="text/javascript">
             alert ("error in adding record !!!!");
-            window.location.assign("event_insert_form.php");
+            window.location.assign("gallery_add_form.php");
             </script>
            <?php 
 

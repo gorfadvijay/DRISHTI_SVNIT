@@ -75,6 +75,9 @@ $result = mysqli_query($dbconn, $sql);
     </tbody>
   </table>
 </div>
+<a href="carousel_add_form.php" class="btn btn-lg btn-primary" >Carousel</a>
+<a href="gallery_add_form.php" class="btn btn-lg btn-primary" >Gallery</a>
+
 <div class="well well-lg text-center  " style="background-color: #292F33; color:#f9f9f9;"> <h2>Conatct-Us Dashboard</h2></div>
 <table  class='table  table-bordered container' style='margin-bottom:20px;height:30px;background-color:#42f4dc'>
     <thead>
@@ -87,6 +90,7 @@ $result = mysqli_query($dbconn, $sql);
       </tr>
     </thead>
 </table>
+
 
     <?php
     if (mysqli_num_rows($result) > 0) {
