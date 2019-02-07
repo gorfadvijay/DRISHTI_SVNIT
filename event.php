@@ -66,12 +66,12 @@ if (mysqli_num_rows($result) >0 ) {
                                                 <img src='<?php echo$row[3]; ?>' alt='' class='img-responsive center-img img-thumbnail ' style='width:80%'>
                                     </div>
 
-                                    <div class='col-md-12 text-center ' style='height:100%; width: 100% ; margin-top:30px; margin-bottom: 50px; '>  <button type="button" class="btn btn-info  btn-lg" data-toggle="collapse" data-target="#<?php echo$row[0]; ?>">click here for more</button> </div>
+                                    <div class='col-md-12 text-center ' style='height:100%; width: 100% ; margin-top:30px; margin-bottom: 50px; '>  <button type="button" class="btn btn-info  btn-lg" data-toggle="collapse" data-target="#<?php echo$row[0]; ?>" id="read-more<?php echo $row[0];?>" onclick='xyz("<?php echo $row[0];?>")'>Read More</button> </div>
                                               <div id="<?php echo$row[0]; ?>" class="collapse">
 
                                                 <a  style='margin-left: px;margin-top: 10px;margin-bottom: 20px;
                                                 width: 50%;' class="btn btn-lg btn-success" href="<?php echo$row[4] ?>"  >Documantation Pdf </a>
-                                                  <iframe style="height:auto ;width:  100%; " src="<?php echo$row[5]; ?>" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                                  <iframe style="height:auto ;width:  100%;height:600px; " src="<?php echo$row[5]; ?>" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                                                    
                                                  
                                                                               
@@ -100,3 +100,18 @@ else {
        <?php 
        include('footer.php')
        ?>
+       <script>
+    function xyz(x){
+
+      var y = "read-more" + x;
+      var z=document.getElementById(y).innerHTML;
+      if(z=='Read More'){
+        document.getElementById(y).innerHTML="Read Less";
+      }
+      else{
+        document.getElementById(y).innerHTML="Read More";
+      }
+      
+    }
+   
+   </script>

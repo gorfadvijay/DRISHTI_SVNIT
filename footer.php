@@ -9,7 +9,7 @@
           <h2 style="color: #ffffff; margin: 20px;">DRISHTI</h2>
         </a>
       <h4 style="color: #ffffff;  margin: 20px;">
-        We are the Technical Club of NIT SURAT
+      Technical Club, NIT SURAT
       </h4>
     </div>
     
@@ -23,15 +23,19 @@
                   margin-bottom: 20px;  color: #f2f2f2">Follow Us  
                   </div>
 
-                    <a class="social-button facebook" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                    <a class="social-button twitter" href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
-                    <a class="social-button linkedin" href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a class="social-button youtube" href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a class="social-button facebook" href="https://www.facebook.com/drishti.nitsurat/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                     <a class="social-button linkedin" href="https://www.linkedin.com/company/drishti-nitsurat/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    
+                    <a style="font-size:160%;"class="social-button " href="https://github.com/DRISHTI-SVNIT" target="_blank"><i class="fab fa-github"></i></a>
+
+
+                    <a class="social-button " href="mailto:drishti.nitsurat@gmail.com" ><i style="font-size:130%;" class="fas fa-envelope-open"></i></a>
+                    <a class="social-button youtube" href="https://www.youtube.com/channel/UCylC06rhz-lE3jPmOqmTnag" target="_blank"><i class="fab fa-youtube"></i></a>
                     
   </div>
 
   
-  
+ 5
 
 <style type="text/css">
 
