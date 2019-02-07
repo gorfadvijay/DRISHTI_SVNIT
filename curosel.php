@@ -1,11 +1,23 @@
+ <?php
+  include 'connect.php';
+
+$sql = "SELECT * FROM `carousel` ";
+$result = mysqli_query($dbconn, $sql);
+
+  ?>
+
 <div class="slideshow-container">
-
-<div class="mySlides curoselfade">
+ <?php 
+if (mysqli_num_rows($result) >0 ) {
   
-  <img src="carousel/2.jpg" style="width:100%">
-  <div class="curoseltext">Caption Text</div>
-</div>
+    while($row = mysqli_fetch_array($result)) {?>
+<div class="mySlides curoselfade">
 
+  
+  <img src="<?php echo $row[1] ;?>" style="width:100%">
+  <div class="curoseltext"><?php echo $row[2] ;?></div>
+</div>
+<!--
 <div class="mySlides curoselfade">
   
   <img src="carousel/1.jpg" style="width:100%">
@@ -22,14 +34,39 @@
   <img src="carousel/4.jpg" style="width:100%">
   <div class="curoseltext">Caption Four</div>
 </div>
+<div class="mySlides curoselfade">
+  
+  <img src="carousel/4.jpg" style="width:100%">
+  <div class="curoseltext">Caption Four</div>
+</div> -->
+ <?php
+       
+}
+}
+
+else {
+    echo "0 results";
+}
+
+?>
 
 </div>
 <br>
 <div style="text-align:center">
+  <?php
+  $count="SELECT count(*) from carousel";
+  $count=mysqli_fetch_array(mysqli_query($dbconn,$count))[0];
+  $i=$count;
+  while($i){?>
   <span class="dot"></span> 
+  <?php
+  $i-=1;
+  }
+  ?>
+ <!-- <span class="dot"></span> 
+  
   <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
+  <span class="dot"></span> -->
 </div>
 
 
