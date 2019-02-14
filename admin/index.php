@@ -37,8 +37,14 @@ $result = mysqli_query($dbconn, $sql);
 </div>
 
 <div class="container " style="margin-left: -15px;">
- 
-  <table class="table table-hover-dark jumbotron " >
+<ul class="nav nav-pills" style="">
+    <li class="active"><a data-toggle="pill" href="#home" >Home</a></li>
+    <li><a data-toggle="pill" href="#menu1">Menu 1</a></li>
+    
+</ul>
+<div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+    <table class="table table-hover-dark jumbotron " >
     <thead style="background-color: #1a1a1a;color: #fff">
       <tr>
         <th><h2>Project</h2></th>
@@ -74,8 +80,9 @@ $result = mysqli_query($dbconn, $sql);
       
     </tbody>
   </table>
-</div>
-<a href="carousel_add_form.php" class="btn btn-lg btn-primary" >Carousel</a>
+    </div>
+    <div id="menu1" class="tab-pane fade">
+     <a href="carousel_add_form.php" class="btn btn-lg btn-primary" >Carousel</a>
 <a href="gallery_add_form.php" class="btn btn-lg btn-primary" >Gallery</a>
 
 <div class="well well-lg text-center  " style="background-color: #292F33; color:#f9f9f9;"> <h2>Conatct-Us Dashboard</h2></div>
@@ -90,8 +97,7 @@ $result = mysqli_query($dbconn, $sql);
       </tr>
     </thead>
 </table>
-
-
+    </div>
     <?php
     if (mysqli_num_rows($result) > 0) {
   
@@ -143,7 +149,13 @@ else {
 ?>
 
 
-​</div>
+​
+   
+</div>
+ 
+  
+</div>
+</div>
 
 </body>
 
@@ -154,4 +166,8 @@ else {
    include('footer.php');
 
 ?>
+
+
+
+   
 
